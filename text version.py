@@ -7,7 +7,7 @@ Hit: draw an additional card to increase the hand value
 Stand: keep the current hand and end the turn
 
 After all players have completed their turns, the dealer reveals the hole card
-The dea;er must hit until their hand totals 17 or higher
+The dealer must hit until their hand totals 17 or higher
 If the dealer busts (exceeds 21), players who haven't busted win
 
 Compare the two hand values
