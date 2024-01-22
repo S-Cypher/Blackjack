@@ -25,10 +25,14 @@ playerCards = []
 
 def inititalDeal():
     for x in range(2):
-        card = int(random.random() * 10)
+        card = random.randint(1,10)
+        if card == 1:
+            card = 11
         dealerCards.append(card)
     for x in range(2):
-        card = int(random.random() * 10)
+        card = random.randint(1,10)
+        if card == 1:
+            card = 11
         playerCards.append(card)
     print(playerCards)
     print(dealerCards[0]);
