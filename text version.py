@@ -29,8 +29,9 @@ def inititalDeal():
         dealerCards.append(card)
     for x in range(2):
         card = int(random.random() * 10)
-        playerCards.append(card);
+        playerCards.append(card)
+    print(playerCards)
+    print(dealerCards[0]);
 
 inititalDeal()
-print(playerCards)
-print(dealerCards[0])
+
