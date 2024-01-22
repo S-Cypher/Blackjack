@@ -1,4 +1,5 @@
 #Blackjack text version
+import random
 
 '''
 Player and dealer are dealt two cards each
@@ -18,3 +19,18 @@ If the player and dealer have the same hand value, it's a push (tie), and the pl
 I probably won't do any money bets yet. That would be cool to implement, but that'll have to wait
 
 '''
+
+dealerCards = []
+playerCards = []
+
+def inititalDeal():
+    for x in range(2):
+        card = int(random.random() * 10)
+        dealerCards.append(card)
+    for x in range(2):
+        card = int(random.random() * 10)
+        playerCards.append(card);
+
+inititalDeal()
+print(playerCards)
+print(dealerCards[0])
