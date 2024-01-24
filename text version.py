@@ -2,8 +2,6 @@
 import random
 
 '''
-Player and dealer are dealt two cards each
-Dealer has one card face-up and the other one faced down
 Hit: draw an additional card to increase the hand value
 Stand: keep the current hand and end the turn
 
@@ -20,22 +18,16 @@ I probably won't do any money bets yet. That would be cool to implement, but tha
 
 '''
 
-dealerCards = []
-playerCards = []
 
-def inititalDeal():
-    for x in range(2):
-        card = random.randint(1,10)
-        if card == 1:
-            card = 11
-        dealerCards.append(card)
-    for x in range(2):
-        card = random.randint(1,10)
-        if card == 1:
-            card = 11
-        playerCards.append(card)
-    print(playerCards)
-    print(dealerCards[0]);
+dealerTotal = 0
+playerTotal = 0
 
-inititalDeal()
+dealerCards = [random.randint(1,10) for _ in range(2)]
+playerCards = [random.randint(1,10) for _ in range(2)]
+
+playerTotal = sum(playerCards)
+
+
+print(playerCards)
+print(dealerCards[0])
 
